@@ -23,13 +23,48 @@ const RulesContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
   background-color: #fbf1f1;
-  padding: 20px;
+  padding: 24px;
   margin-top: 40px;
   border-radius: 10px;
+
   h2 {
     font-size: 24px;
+    text-align: center;
   }
+
   .text {
     margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px;
+
+    h2 {
+      font-size: 22px;
+    }
+
+    .text p {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 16px;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .text p {
+      font-size: 15px;
+    }
   }
 `;
